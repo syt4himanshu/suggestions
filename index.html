@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra Farmer's Weather Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Maharashtra Farmer's Weather Companion 🌾</h1>
+        <div class="crop-selector">
+            <label for="crop-select">Select your crop:</label>
+            <select id="crop-select">
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice</option>
+                <option value="cotton">Cotton</option>
+                <option value="sugarcane">Sugarcane</option>
+                <option value="soybean">Soybean</option>
+            </select>
+        </div>
+        <div class="weather-search">
+            <input type="text" id="city-input" placeholder="Enter your village or city name...">
+            <button id="get-weather-btn">Get Forecast</button>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+        <div id="weather-info" class="weather-info"></div>
+        <div id="farmer-tools" class="farmer-tools"></div>
+    </div>
+</body>
+</html>
